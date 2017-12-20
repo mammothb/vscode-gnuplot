@@ -1,0 +1,45 @@
+{
+    "name": "gnuplot",
+    "displayName": "Gnuplot",
+    "description": "Gnuplot support for Visual Studio Code",
+    "version": "1.0.0",
+    "publisher": "mammothb",
+    "license": "SEE LICENSE IN LICENSE.md",
+    "engines": {
+        "vscode": "^1.19.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mammothb/vscode-scilab.git"
+    },
+    "icon": "images/icon.png",
+    "bugs": "https://github.com/mammothb/vscode-scilab/issues",
+    "contributes": {
+        "languages": [{
+            "id": "gnuplot",
+            "aliases": [
+                "Gnuplot",
+                "gnuplot"
+            ],
+            "extensions": [
+                ".gp",
+                ".gnuplot",
+                ".gnu",
+                ".plot"
+            ],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "gnuplot",
+            "scopeName": "source.gnuplot",
+            "path": "./syntaxes/gnuplot.tmLanguage"
+        }],
+        "snippets": [{
+            "language": "gnuplot",
+            "path": "./snippets/gnuplot.json"
+        }]
+    }
+}
