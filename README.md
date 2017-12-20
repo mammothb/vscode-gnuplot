@@ -13,9 +13,6 @@ This extension adds support for Gnuplot to VS Code, including:
 (Translated from TextMate's snippets)
 
 ## Release Notes
-
-Users appreciate release notes as you update your extension.
-
 ### 1.0.0
 
 Initial release
