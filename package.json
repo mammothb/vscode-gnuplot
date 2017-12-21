@@ -13,10 +13,10 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/mammothb/vscode-scilab.git"
+        "url": "https://github.com/mammothb/vscode-gnuplot.git"
     },
     "icon": "images/icon.png",
-    "bugs": "https://github.com/mammothb/vscode-scilab/issues",
+    "bugs": "https://github.com/mammothb/vscode-gnuplot/issues",
     "contributes": {
         "languages": [{
             "id": "gnuplot",
