@@ -8,6 +8,7 @@
 		<string>gnuplot</string>
 		<string>gnu</string>
 		<string>plot</string>
+    <string>plt</string>
 	</array>
 	<key>keyEquivalent</key>
 	<string>^~G</string>
@@ -227,14 +228,14 @@
 			<string>user defined function / variable</string>
 			<key>match</key>
 			<string>(?x:
-				\b # Start with a word boundary
-				(?=\b[\w$]*(\(|.*=))	# Look-ahead for a bracket or equals
-				(?![^(]*\))	# negative look ahead for a closing bracket without an opening one. This stops a from matching in f(a)
-				(					# Group variable name
-					[A-Za-z] 			# A letter
-					[\w$]*	 		# Any word chars or $
-				)					# That is it for the name.
-			)</string>
+				        \b                      # Start with a word boundary
+				        (?=\b[\w$]*(\(|.*=|\s))	# Look-ahead for a bracket or equals or a white space
+				        (?![^(]*\))	            # negative look ahead for a closing bracket without an opening one. This stops a from matching in f(a)
+				        (					              # Group variable name
+					        [A-Za-z] 			        # A letter
+					        [\w$]*	 		          # Any alphanumeric or $
+				        )					              # That is it for the name.
+			        )</string>
 			<key>name</key>
 			<string>variable.other.gnuplot</string>
 		</dict>
@@ -366,20 +367,22 @@
 			<string>(?x:         # turn on extended mode
                 -?         # an optional minus
                 (?:
-                  0        # a zero
-                  |        # ...or...
-                  [1-9]    # a 1-9 character
+                  [0-9]    # a 0-9 character
                   \d*      # followed by zero or more digits
                 )
                 (?:
                   \.       # a period
                   \d+      # followed by one or more digits
-                  (?:
-                    [eE]   # an e character
-                    [+-]?  # followed by an option +/-
-                    \d+    # followed by one or more digits
-                  )?       # make exponent optional
                 )?         # make decimal portion optional
+                (?:
+                  [eE]   # an e character
+                  [+-]?  # followed by an option +/-
+                  \d+    # followed by one or more digits
+                  (?:
+                    \.   # a period
+                    \d+  # followed by one or more digits
+                  )?     # make decimal in exponent power optional
+                )?       # make exponent optional
               )</string>
 			<key>name</key>
 			<string>constant.numeric.gnuplot</string>
