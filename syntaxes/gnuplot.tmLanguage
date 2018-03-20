@@ -141,12 +141,12 @@
 					<key>name</key>
 					<string>punctuation.separator.range.gnuplot</string>
 				</dict>
-				<dict>
+				<!-- <dict>
 					<key>match</key>
 					<string>(?i:[^\s(pi|e)\]])</string>
 					<key>name</key>
 					<string>invalid.illegal.expected-range-separator.gnuplot</string>
-				</dict>
+				</dict> -->
 			</array>
 		</dict>
 		<dict>
@@ -179,7 +179,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(angles|arrow|autoscale|bars|border|boxwidth|clabel|clip|cntrparam|colorbox|contour|decimalsign|dgrid3d|dummy|encoding|fit|format|grid|hidden3d|historysize|isosamples|key|label|locale|logscale|macros|bmargin|lmargin|rmargin|tmargin|mapping|mouse|multiplot|offsets|origin|output|palette|parametric|pm3d|pointsize|polar|print|rrange|trange|urange|vrange|samples|size|style|surface|tics|ticscale|ticslevel|timestamp|timefmt|title|view|xyplane|x2data|xdata|y2data|ydata|z2data|zdata|x2label|xlabel|y2label|ylabel|z2label|zlabel|x2range|xrange|y2range|yrange|z2range|zrange|mx2tics|mxtics|my2tics|mytics|mz2tics|mztics|nomx2tics|nomxtics|nomy2tics|nomytics|nomz2tics|nomztics|nox2tics|noxtics|noy2tics|noytics|noz2tics|noztics|x2tics|xtics|y2tics|ytics|z2tics|ztics|x2dtics|x2mtics|xdtics|xmtics|y2dtics|y2mtics|ydtics|ymtics|z2dtics|z2mtics|zdtics|zmtics|x2zeroaxis|xzeroaxis|y2zeroaxis|yzeroaxis|z2zeroaxis|zeroaxis|zzeroaxis|zero)\b</string>
+			<string>\b(angles|arrow|autoscale|bind|bmargin|border|boxwidth|color|colorsequence|clabel|clip|cntrlabel|cntrparam|colorbox|colornames|contour|dashtype|datastyle|datafile|decimalsign|dgrid3d|dummy|encoding|errorbars|fit|fontpath|format|functionstyle|functions|grid|hidden3d|historysize|history|isosamples|jitter|key|label|linetype|link|lmargin|loadpath|locale|logscale|macros|mapping|margin|micro|minussign|monochrome|mouse|mttics|multiplot|mx2tics|mxtics|my2tics|mytics|mztics|nonlinear|object|offsets|origin|output|parametric|paxis|plot|pm3d|palette|pointintervalbox|pointsize|polar|print|psdir|raxis|rgbmax|rlabel|rmargin|rrange|rtics|samples|size|style|surface|table|terminal|termoption|theta|tics|ticslevel|ticscale|timestamp|timefmt|title|tmargin|trange|ttics|urange|variables|version|view|vrange|x2data|x2dtics|x2label|x2mtics|x2range|x2tics|x2zeroaxis|xdata|xdtics|xlabel|xmtics|xrange|xtics|xyplane|xzeroaxis|y2data|y2dtics|y2label|y2mtics|y2range|y2tics|y2zeroaxis|ydata|ydtics|ylabel|ymtics|yrange|ytics|yzeroaxis|zdata|zdtics|zzeroaxis|cbdata|cbdtics|zero|zeroaxis|zlabel|zmtics|zrange|ztics|cblabel|cbmtics|cbrange|cbtics)\b</string>
 			<key>name</key>
 			<string>keyword.other.setting.gnuplot</string>
 		</dict>
@@ -187,7 +187,7 @@
 			<key>comment</key>
 			<string>missuse of scopes alert! Just for pretty colours</string>
 			<key>match</key>
-			<string>\b(cd|call|clear|exit|unset|plot|splot|help|load|pause|quit|fit|replot|ifFIT_LIMIT|FIT_MAXITER|FIT_START_LAMBDA|FIT_LAMBDA_FACTOR|FIT_LOG|FIT_SCRIPT|print|pwd|reread|reset|save|show|test|!|functions|var)\b</string>
+			<string>\b(break|cd|call|clear|continue|do|evaluate|exit|fit|help|history|if|for|import|load|lower|pause|plot|print|printerr|pwd|quit|raise|refresh|replot|reread|reset|save|set|show|shell|splot|stats|syste|test|toggle|undefine|unset|update|while|FIT_LIMIT|FIT_MAXITER|FIT_START_LAMBDA|FIT_LAMBDA_FACTOR|FIT_LOG|FIT_SCRIPT|!|functions|var)\b</string>
 			<key>name</key>
 			<string>keyword.other.command.gnuplot</string>
 		</dict>
