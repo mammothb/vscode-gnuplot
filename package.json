@@ -2,7 +2,7 @@
     "name": "gnuplot",
     "displayName": "Gnuplot",
     "description": "Gnuplot support for Visual Studio Code",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "publisher": "mammothb",
     "license": "SEE LICENSE IN LICENSE.md",
     "engines": {
