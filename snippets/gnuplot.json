@@ -129,5 +129,45 @@
       "$0"
     ],
     "description": "The set zrange command sets the range that will be displayed on the z axis"
+  },
+  "cbrange": {
+    "prefix": "cbrange",
+    "body": [
+      "set cbrange [${1:0}:${2:10}]",
+      "$0"
+    ],
+    "description": "The set cbrange command sets the range that will be displayed on the color bar axis"
+  },
+  "xlabel": {
+    "prefix": "xlabel",
+    "body": [
+      "set xlabel '${1:x}'",
+      "$0"
+    ],
+    "description": "Sets the x axis title that will be displayed."
+  },
+  "ylabel": {
+    "prefix": "ylabel",
+    "body": [
+      "set ylabel '${1:y}'",
+      "$0"
+    ],
+    "description": "Sets the y axis title that will be displayed."
+  },
+  "zlabel": {
+    "prefix": "zlabel",
+    "body": [
+      "set zlabel '${1:z}'",
+      "$0"
+    ],
+    "description": "Sets the z axis title that will be displayed on the z axis"
+  },
+  "cblabel": {
+    "prefix": "cblabel",
+    "body": [
+      "set cblabel '${1:cb}'",
+      "$0"
+    ],
+    "description": "Sets the color bar title that will be displayed on the color bar axis"
   }
 }
