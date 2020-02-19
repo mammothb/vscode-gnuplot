@@ -169,5 +169,37 @@
       "$0"
     ],
     "description": "Sets the color bar title that will be displayed on the color bar axis"
+  },
+  "xtics": {
+    "prefix": "xtics",
+    "body": [
+      "set xtics '${1:1}'",
+      "$0"
+    ],
+    "description": "Sets the tics for the x axis that will be displayed."
+  },
+  "ytics": {
+    "prefix": "ytics",
+    "body": [
+      "set ytics '${1:1}'",
+      "$0"
+    ],
+    "description": "Sets the tics for the y axis that will be displayed."
+  },
+  "ztics": {
+    "prefix": "ztics",
+    "body": [
+      "set ztics '${1:1}'",
+      "$0"
+    ],
+    "description": "Sets the tics for the z axis that will be displayed on the z axis"
+  },
+  "cbtics": {
+    "prefix": "cbtics",
+    "body": [
+      "set cbtics '${1:1}'",
+      "$0"
+    ],
+    "description": "Sets the tics for the color bar that will be displayed on the color bar axis"
   }
 }
