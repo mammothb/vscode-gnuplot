@@ -65,7 +65,7 @@
   "key": {
     "prefix": "key",
     "body": [
-      "set key ${1:outside}",
+      "set key ${1:top right}",
       "$0"
     ],
     "description": " The set key enables a key (or legend) describing plots on a plot."
@@ -201,5 +201,37 @@
       "$0"
     ],
     "description": "Sets the tics for the color bar that will be displayed on the color bar axis"
+  },
+  "samples": {
+    "prefix": "samples",
+    "body": [
+      "set samples ${1:1000}",
+      "$0"
+    ],
+    "description": "Sets the number of samples when plotting a continuous function"
+  },
+  "logscale": {
+    "prefix": "logscale",
+    "body": [
+      "set logscale ${1:y}",
+      "$0"
+    ],
+    "description": "Sets axes to have a logarithmic scaling"
+  },
+  "format": {
+    "prefix": "format",
+    "body": [
+      "set format ${1:y} ${2:'%.1f'}",
+      "$0"
+    ],
+    "description": "Sets the format for axis tics"
+  },
+  "output": {
+    "prefix": "output",
+    "body": [
+      "set output ${1:'file'}",
+      "$0"
+    ],
+    "description": "Sets the output file"
   }
 }
